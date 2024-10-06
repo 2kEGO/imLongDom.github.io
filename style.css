@@ -1,20 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: silver;
+    background-color: black;
     margin: 0 20%;
     font-family: 'Poppins', Arial, sans-serif;
     color: white;
 }
+
 
 /* HEADER */
 .social_container{
     display: flex;
     width: 100%;
 }
+
 
 .social_list {
     width: 100%;
@@ -35,6 +39,7 @@ body {
 
 .intro {
     width: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid white;
@@ -42,11 +47,14 @@ body {
 
 .intro_img_container{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
 .intro_img_container img {
     width: 70%;
-    
+    border-radius: 50%;
 }
 
 .intro_aboutMe{
@@ -122,7 +130,7 @@ body {
     grid-template-columns: auto 1fr;
     gap: 5px 15px;
     background-color: #1a1a1a;
-    padding: 40px;
+    padding: 30px;
     border-radius: 5px;
 }
 
@@ -154,8 +162,31 @@ body {
 .course_item {
     display: grid;
     list-style: none;
-    background-color: black;
+    background-color: #1a1a1a;
     border-radius: 5px;
     text-align: center;
     padding: 40px;
+}
+
+.social-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.social-container a img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    
+}
+
+.social-container a{
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
 }

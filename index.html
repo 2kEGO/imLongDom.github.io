@@ -5,22 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L2 Assigment</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                translateY: (-200px);
+            }to {
+                opacity: 1;
+                translateY: (0px);
+            }
+        }
+        .education_content, .education_item, .course_content, .course_item {
+            animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0 cover 20%;
+
+        } 
+    </style>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="social_container">
-            <ol class="social_list">
+            <ul class="social_list">
                 <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
                 <li><span>My Email: pham.nguyen@torontomu.ca</span></li>
                 <li><a href="#"><img src="github.png" alt="GitHub"></a></li>
-            </ol>
+            </ul>
         </div>
-    </header>
+    </header> -->
 
     <div class="body">
         <div class="intro">
             <div class="intro_img_container">
-                <img src="" alt="">
+                <img src="cat.jpg" alt="" onclick="toggleZoom()" id="avatar-img">
             </div>
             <div class="intro_aboutMe">
                 <h1 class="text">About me</h1>
@@ -36,6 +54,17 @@
                     <div class="value">pham.nguyen@torontomu.ca</div>
                     <div class="label">Nationality:</div>
                     <div class="value">Vietnamese</div>
+                </div>
+                <div class="social-container">
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>Github</span>
+                    </a>
+                    <a href="#">
+                        <img src="" alt="">
+                        <span>Linkedin</span>
+                    </a>
+                    
                 </div>
             </div>
 
@@ -130,7 +159,47 @@
 
             <div class="exp_content">
                 <div class="exp_item">
-                    <a href="#"></a>
+
+                    <div class="exp_button" onclick="expandExperience()">
+                        <div class="exp_info">
+                            <h1>Research Engineer</h1>
+                            <h2>Vietnam National University</h2>
+                            <h3>Remote, ON</h3>
+                            <h3>Mar 2024 - Jun 2024</h3>
+                        </div>
+                        
+                        <!-- <div class="triangle">
+                            <img src="expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </div> -->
+
+                        <div class="exp_info_dropdown" id="dropDown">
+                            <ul>
+                                <li>Researched rice panicle image detection using deep learning supervised by Dr.Hiep Dinh Tran.</li>
+                                <li>Implemented and evaluated YOLO models V9 for classifying different types of rice panicles, achieving a final
+                                    accuracy of over 90%.</li>
+                                <li>Developed and optimized a comprehensive labeling process for accurately identifying and categorizing different rice
+                                    panicles and marking rice panicle junctions and grains for further analysis and classification.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+                <div class="exp_item">
+                    <button class="exp_button">
+                        <div class="exp_info">
+                            <h1>Marketing Intern</h1>
+                            <h2>Andie</2>
+                            <h3>Toronto, On</h3>
+                            <h3>Sep 2019 - Aug 2022</h3>
+                        </div>
+                        
+                        <!-- <div class="triangle">
+                            <img src="expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        </div> -->
+                    </button>
                 </div>
             </div>
         </div>
@@ -146,5 +215,6 @@
             
         </div>
     </div>
+    <script src="script.js"></script>    
 </body>
 </html>
