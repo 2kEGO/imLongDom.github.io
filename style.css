@@ -12,6 +12,10 @@ body {
     color: white;
 }
 
+.show{ 
+    display: grid;
+}
+
 
 /* HEADER */
 .social_container{
