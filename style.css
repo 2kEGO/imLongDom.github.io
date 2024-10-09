@@ -36,7 +36,7 @@ body {
 .body {
     width: 100%;
     display: flex;
-    border: 1px solid white;
+    
     flex-direction: column;
 }
 
@@ -103,6 +103,7 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid white;
 }
 
 
@@ -152,9 +153,15 @@ body {
 
 
 .course {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 30px 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
 }
 
 .course_content {

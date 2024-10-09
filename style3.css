@@ -45,8 +45,32 @@ textarea:focus, input:focus{
 }
 
 .userWarning.show{
-    display: contents;
+    display: none;
 }
 
+/* NAVIGATION BAR */
 
+.navigation-container {
+    padding: 5px 10px;
+}
+
+.navigation-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10%;
+    min-height: 8vh;
+}
+
+.navigation-bar {
+    margin-left: 20%;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
 

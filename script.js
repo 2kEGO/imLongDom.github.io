@@ -4,7 +4,11 @@ let dropDown = document.getElementsByClassName("exp_info_dropdown");
 const nameInsert = document.getElementById('name_insert');
 const insertSection = document.getElementById('name-insert-section');
 let guestName = document.getElementById('guest_name');
+const submitButtonHover = document.getElementById('hover-submit-button');
 
+
+submitButtonHover.addEventListener('mouseover', (event) => { 
+    event.style.backgroundColor = 'red';} );
 
 // TOGGLE ZOOM AVATAR
 function toggleZoom() {
