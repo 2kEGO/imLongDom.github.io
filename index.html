@@ -6,6 +6,7 @@
     <title>L2 Assigment</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
     <style>
         @keyframes appear {
             from {
@@ -25,210 +26,241 @@
     </style>
 </head>
 <body>
-    <!-- <header>
-        <div class="social_container">
-            <ul class="social_list">
-                <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
-                <li><span>My Email: pham.nguyen@torontomu.ca</span></li>
-                <li><a href="#"><img src="github.png" alt="GitHub"></a></li>
-            </ul>
-        </div>
-    </header> -->
-
-    <div class="body">
-        <div class="intro">
-            <div class="intro_img_container">
-                <img src="cat.jpg" alt="" onclick="toggleZoom()" id="avatar-img">
-            </div>
-            <div class="intro_aboutMe">
-                <h1 class="text">About me</h1>
-                <h2 class="text_h2">Hi, My name is Long</h2>
-                <div class="info">
-                    <div class="label">Name:</div>
-                    <div class="value">Long Nguyen</div>
-                    <div class="label">Date of birth:</div>
-                    <div class="value">30/Aug/2000</div>
-                    <div class="label">Location:</div>
-                    <div class="value">Toronto, Canada</div>
-                    <div class="label">Email:</div>
-                    <div class="value">pham.nguyen@torontomu.ca</div>
-                    <div class="label">Nationality:</div>
-                    <div class="value">Vietnamese</div>
+    <div class="body_container">
+        <div class="body">
+            <div class="intro">
+                <div class="intro_img_container">
+                    <img src="cat.jpg" alt="" onclick="toggleZoom()" id="avatar-img">
                 </div>
-                <div class="social-container">
-                    <a href="#">
-                        <img src="" alt="">
-                        <span>Github</span>
-                    </a>
-                    <a href="#">
-                        <img src="" alt="">
-                        <span>Linkedin</span>
-                    </a>
+                <div class="intro_aboutMe">
+                    <h1 class="text">About me</h1>
+                    <h2 class="text_h2">Hi, My name is Long</h2>
+                    <div class="info">
+                        <div class="label">Name:</div>
+                        <div class="value">Long Nguyen</div>
+                        <div class="label">Date of birth:</div>
+                        <div class="value">30/Aug/2000</div>
+                        <div class="label">Location:</div>
+                        <div class="value">Toronto, Canada</div>
+                        <div class="label">Email:</div>
+                        <div class="value">pham.nguyen@torontomu.ca</div>
+                        <div class="label">Nationality:</div>
+                        <div class="value">Vietnamese</div>
+                    </div>
+                    <div class="social-container">
+                        <a href="#">
+                            <img src="25231.png" alt="">
+                            <span>Github</span>
+                        </a>
+                        <a href="#">
+                            <img src="linkedin.webp" alt="">
+                            <span>Linkedin</span>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            </div>  
+
+            <div class="education">
+                <div class="title">
+                    <h1>Education</h1>                 
+                </div>
+                <div class="education_content">
+
+                    <div class="education_item">
+                        <div class="label">University:</div>
+                        <div class="value">Metropolitant University of Toronto</div>
+                        <div class="label">Degree:</div>
+                        <div class="value">Business Technology Management</div>
+                        <div class="label">Year:</div>
+                        <div class="value">2022</div>
+                    </div>
+                    
+                    <div class="education_item">
+                        <div class="label">University:</div>
+                        <div class="value">Seneca College</div>
+                        <div class="label">Degree:</div>
+                        <div class="value">Business Administration - Marketing</div>
+                        <div class="label">Year:</div>
+                        <div class="value">2019</div>
+                    </div>
+
+                    <div class="education_item">
+                        <div class="label">High School:</div>
+                        <div class="value">Great Lakes college of Toronto</div>
+                        <div class="label">Year:</div>
+                        <div class="value">2017</div>
+                    </div>
+                </div>
+                    
+            </div>
+            
+            
+            <!-- FAVORITE COURSE -->
+
+            <div class="course">
+
+                <div class="title">
+                    <h1 class="resume_text">Favorite Course</h1>
+                </div>
+
+                <div class="course_content">
+                    <ul class="course_item">
+                        <li class="course_label">Artificial Intelligence in Business</li>
+                        <li class="course_label">ITM 740</li>
+                        <li class="course_label"></li>
+                        <li class="course_label">Toronto Metropolitan University</li>
+                        <p class="course_description">Explores AI's role in transforming business processes, decision-making, and innovation.</p>
+                    </ul>
+
+                    <ul class="course_item">
+                        <li class="course_label">Big Data Analytics</li>
+                        <li class="course_label">ITM 760</li>
+                        <li class="course_label">Toronto Metropolitan University</li>
+                        <p class="course_description">Focuses on analyzing large datasets to gain insights and support data-driven decisions.</p>
+                    </ul>
+
+                    <ul class="course_item">
+                        <li class="course_label">Data and Information Management</li>
+                        <li class="course_label">ITM 500</li>
+                        <li class="course_label">Toronto Metropolitan University</li>
+                        <p class="course_description">Covers SQL fundamentals with a focus on database management using Microsoft SQL Server.</p>
+                    </ul>
+
+                    <ul class="course_item">
+                        <li class="course_label">Fundamentals of Programming</li>
+                        <li class="course_label">ITM 200</li>
+                        <li class="course_label">Toronto Metropolitan University</li>
+                        <p class="course_description">A foundational course that introduces programming concepts and problem-solving using Python languages.</p>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="experience">
+                <div class="title">
+                    <h1 class="resume_text">Experience</h1>
+                </div>
+
+                <div class="exp_content">
+
+                    <div class="exp_item">
+                        <div class="exp_button" onclick="expandExperience()" >
+                            <div class="exp_info">
+                                <h1>Research Engineer</h1>
+                                <h2>Vietnam National University</h2>
+                                <h3>Remote, ON</h3>
+                                <h3>Mar 2024 - Jun 2024</h3>
+                            </div>
+                            
+                            <!-- <div class="triangle">
+                                <img src="expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </div> -->
+
+                            <div class="exp_info_dropdown" id="dropDown">
+                                <ul>
+                                    <li>Researched rice panicle image detection using deep learning supervised by Dr.Hiep Dinh Tran.</li>
+                                    <li>Implemented and evaluated YOLO models V9 for classifying different types of rice panicles, achieving a final
+                                        accuracy of over 90%.</li>
+                                    <li>Developed and optimized a comprehensive labeling process for accurately identifying and categorizing different rice
+                                        panicles and marking rice panicle junctions and grains for further analysis and classification.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>                   
+                    
+                    <div class="exp_item">
+                        <div class="exp_button" onclick="expandExperience2()">
+                            <div class="exp_info">
+                                <h1>Marketing Intern</h1>
+                                <h2>Andie</2>
+                                <h3>Toronto, On</h3>
+                                <h3>Sep 2019 - Aug 2022</h3>
+                            </div>
+                            
+                            <!-- <div class="triangle">
+                                <img src="expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                            </div> -->
+
+                            <div class="exp_info_dropdown" id="dropDown2">
+                                <ul>
+                                    <li>
+                                        Demonstrated independence by interviewing on average 5 people per day about food and technology without bias
+    to conduct quantitative reports
+                                    </li>
+                                        
+                                    <li>
+                                        Increased customer satisfaction by providing timely individualized support through emails and phone calls
+                                    </li>
+
+                                    <li>
+                                        Ensured communications aligned with the business requirements of the hiring manager to make sound decisions
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>       
+                    </div>
                     
                 </div>
             </div>
 
-        </div>  
-
-        <!-- <div class="resume_section">
-            <div class="header_section">
-                <h1>Resume</h1>
-            </div>
-        </div> -->
-
-        <div class="education">
-            <div class="title">
-                <h1>Education</h1>                 
-            </div>
-            <div class="education_content">
-
-                <div class="education_item">
-                    <div class="label">University:</div>
-                    <div class="value">Metropolitant University of Toronto</div>
-                    <div class="label">Degree:</div>
-                    <div class="value">Business Technology Management</div>
-                    <div class="label">Year:</div>
-                    <div class="value">2022</div>
-                </div>
-                
-                <div class="education_item">
-                    <div class="label">University:</div>
-                    <div class="value">Seneca College</div>
-                    <div class="label">Degree:</div>
-                    <div class="value">Business Administration - Marketing</div>
-                    <div class="label">Year:</div>
-                    <div class="value">2019</div>
+            <div class="Project">
+                <div class="title">
+                    <h1 class="resume_text">Projects</h1>
                 </div>
 
-                <div class="education_item">
-                    <div class="label">High School:</div>
-                    <div class="value">Great Lakes college of Toronto</div>
-                    <div class="label">Year:</div>
-                    <div class="value">2017</div>
+                <div class="project_content">
+
+                    <a href="#" class="project_items">                
+                        <img src="" alt="">                   
+                        <div class="span-slide">
+                            <span>Tic Tac Toe</span>
+                        </div>  
+                    </a>
+
+                    <a href="#" class="project_items">                
+                        <img src="" alt="">
+                        <div class="span-slide">
+                            <span>OP.GG Replication</span>
+                        </div>    
+                    </a>
+
+                    <a href="#" class="project_items">                
+                        <img src="" alt="">
+                        <div class="span-slide">
+                            <span>Random Color</span>
+                        </div>    
+                    </a>
+
+                    <a href="#" class="project_items">                
+                        <img src="" alt="">
+                        <div class="span-slide">
+                            <span>Calculator</span>
+                        </div>
+    
+                    </a>
+                    
+
                 </div>
             </div>
-                
-        </div>
-        
-        
-        <!-- FAVORITE COURSE -->
 
-        <div class="course">
-
-            <div class="title">
-                <h1 class="resume_text">Favorite Course</h1>
             </div>
-
-            <div class="course_content">
-                <ul class="course_item">
-                    <li class="course_label">Artificial Intelligence in Business</li>
-                    <li class="course_label">ITM 740</li>
-                    <li class="course_label"></li>
-                    <li class="course_label">Toronto Metropolitan University</li>
-                    <p class="course_description">Explores AI's role in transforming business processes, decision-making, and innovation.</p>
-                </ul>
-
-                <ul class="course_item">
-                    <li class="course_label">Big Data Analytics</li>
-                    <li class="course_label">ITM 760</li>
-                    <li class="course_label">Toronto Metropolitan University</li>
-                    <p class="course_description">Focuses on analyzing large datasets to gain insights and support data-driven decisions.</p>
-                </ul>
-
-                <ul class="course_item">
-                    <li class="course_label">Data and Information Management</li>
-                    <li class="course_label">ITM 500</li>
-                    <li class="course_label">Toronto Metropolitan University</li>
-                    <p class="course_description">Covers SQL fundamentals with a focus on database management using Microsoft SQL Server.</p>
-                </ul>
-
-                <ul class="course_item">
-                    <li class="course_label">Fundamentals of Programming</li>
-                    <li class="course_label">ITM 200</li>
-                    <li class="course_label">Toronto Metropolitan University</li>
-                    <p class="course_description">A foundational course that introduces programming concepts and problem-solving using Python languages.</p>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="experience">
-            <div class="title">
-                <h1 class="resume_text">Experience</h1>
-            </div>
-
-            <div class="exp_content">
-
-                <div class="exp_item">
-                    <div class="exp_button" onclick="expandExperience()" >
-                        <div class="exp_info">
-                            <h1>Research Engineer</h1>
-                            <h2>Vietnam National University</h2>
-                            <h3>Remote, ON</h3>
-                            <h3>Mar 2024 - Jun 2024</h3>
-                        </div>
-                        
-                        <!-- <div class="triangle">
-                            <img src="expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        </div> -->
-
-                        <div class="exp_info_dropdown" id="dropDown">
-                            <ul>
-                                <li>Researched rice panicle image detection using deep learning supervised by Dr.Hiep Dinh Tran.</li>
-                                <li>Implemented and evaluated YOLO models V9 for classifying different types of rice panicles, achieving a final
-                                    accuracy of over 90%.</li>
-                                <li>Developed and optimized a comprehensive labeling process for accurately identifying and categorizing different rice
-                                    panicles and marking rice panicle junctions and grains for further analysis and classification.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>                   
-                
-                <div class="exp_item">
-                    <div class="exp_button" onclick="expandExperience2()">
-                        <div class="exp_info">
-                            <h1>Marketing Intern</h1>
-                            <h2>Andie</2>
-                            <h3>Toronto, On</h3>
-                            <h3>Sep 2019 - Aug 2022</h3>
-                        </div>
-                        
-                        <!-- <div class="triangle">
-                            <img src="expand_circle_down_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        </div> -->
-
-                        <div class="exp_info_dropdown" id="dropDown2">
-                            <ul>
-                                <li>
-                                    Demonstrated independence by interviewing on average 5 people per day about food and technology without bias
-to conduct quantitative reports
-                                </li>
-                                    
-                                <li>
-                                    Increased customer satisfaction by providing timely individualized support through emails and phone calls
-                                </li>
-
-                                <li>
-                                    Ensured communications aligned with the business requirements of the hiring manager to make sound decisions
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>       
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="techical">
-            <div class="title">
-                <h1 class="resume_text">Techical Skills</h1>
-            </div>
-        </div>
-
         </div>
     </div>
+            
+        </div>
+    </div>
+
+    <div class="name-insert-section">
+        <div class="insert-section">
+            <h1>Please enter your name</h1>
+            <div class="input-name-section">
+                <input type="text" id="name_insert">
+                <button>Submit</button>
+            </div>
             
         </div>
     </div>

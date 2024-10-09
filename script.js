@@ -15,8 +15,8 @@ function toggleZoom() {
 
 function expandExperience(){
     document.getElementById('dropDown').classList.toggle("show");
-}
+};
 
-function expandExperience2(){
-W    document.getElementById('dropDown2').classList.toggle("show");
-}
+function expandExperience2(){    
+    document.getElementById('dropDown2').classList.toggle("show");
+};
