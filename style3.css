@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 .name-insert-section {
     position: fixed;
     top: 0;
@@ -45,7 +47,7 @@ textarea:focus, input:focus{
 }
 
 .userWarning.show{
-    display: none;
+    display: contents;
 }
 
 /* NAVIGATION BAR */
@@ -60,10 +62,23 @@ textarea:focus, input:focus{
     align-items: center;
     margin: 0 10%;
     min-height: 8vh;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0 ;
+}
+
+#logo {
+    text-decoration: none;
+    font-family: "Poppins", "Arial";
+    font-weight: 900;
+    font-size: 24px;
+    color: white;
 }
 
 .navigation-bar {
     margin-left: 20%;
+    position: sticky;
 }
 
 .navigation-bar ul {
@@ -71,6 +86,12 @@ textarea:focus, input:focus{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: center;
     gap: 30px;
+}
+
+.navigation-bar ul li a{
+    color: white;
+    text-decoration: none;
 }
 

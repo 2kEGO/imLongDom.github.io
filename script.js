@@ -6,10 +6,6 @@ const insertSection = document.getElementById('name-insert-section');
 let guestName = document.getElementById('guest_name');
 const submitButtonHover = document.getElementById('hover-submit-button');
 
-
-submitButtonHover.addEventListener('mouseover', (event) => { 
-    event.style.backgroundColor = 'red';} );
-
 // TOGGLE ZOOM AVATAR
 function toggleZoom() {
     if (isZoomed) {
@@ -34,11 +30,23 @@ function expandExperience2(){
 // SUBMIT NAME welcome page
 function submitName () {
     const name = nameInsert.value;
-  if (name !== ""){
-        guestName.innerText = `Hi ${name}, My name is Long`;
+    if (name !== ""){
+        guestName.innerText = `Hi ${name}, Welcome to my page!`;
         insertSection.style.display = 'none';
     }else{
         document.getElementById('userWarning').classList.toggle("show");
+        console.log('clicked')
     }
     
+}
+
+
+// Change button background
+
+function toggleColorChange() {
+    submitButtonHover.style.backgroundColor = 'Red';
+}
+
+function toggleColorChange2() {
+    submitButtonHover.style.backgroundColor = 'Yellow'
 }

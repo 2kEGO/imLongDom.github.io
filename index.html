@@ -30,23 +30,24 @@
     <nav class="navigation-container">
         <div class="navigation-items">
 
-            <a href="">Long Nguyen</a>
+            <a id="logo" href="">Long Nguyen</a>
+
             <div class="navigation-bar">                
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="#intro">Home</a>
                     </li>
                     <li>
-                        <a href="">Education</a>
+                        <a href="#edu">Education</a>
                     </li>
                     <li>
-                        <a href="">Courses</a>
+                        <a href="#course">Courses</a>
                     </li>
                     <li>
-                        <a href="">Experience</a>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a href="">Project</a>
+                        <a href="#project">Project</a>
                     </li>               
                 </ul>
             </div>
@@ -56,13 +57,15 @@
 
     <div class="body_container">
         <div class="body">
-            <div class="intro">
+
+            <div class="intro" id="intro">
                 <div class="intro_img_container">
                     <img src="cat.jpg" alt="" onclick="toggleZoom()" id="avatar-img">
                 </div>
                 <div class="intro_aboutMe">
-                    <h1 class="text">About me</h1>
-                    <h2 class="text_h2" id="guest_name">Hi, My name is Long</h2>
+                    <h1 class="text_h2" id="guest_name">Hi, My name is Long</h1>
+                    <h2 class="text">About me</h2>
+                    
                     <div class="info">
                         <div class="label">Name:</div>
                         <div class="value">Long Nguyen</div>
@@ -90,7 +93,7 @@
 
             </div>  
 
-            <div class="education">
+            <div class="education" id="edu">
                 <div class="title">
                     <h1>Education</h1>                 
                 </div>
@@ -127,7 +130,7 @@
             
             <!-- FAVORITE COURSE -->
 
-            <div class="course">
+            <div class="course" id="course">
 
                 <div class="title">
                     <h1 class="resume_text">Favorite Course</h1>
@@ -166,7 +169,7 @@
 
             </div>
 
-            <div class="experience">
+            <div class="experience" id="experience">
                 <div class="title">
                     <h1 class="resume_text">Experience</h1>
                 </div>
@@ -235,7 +238,7 @@
                 </div>
             </div>
 
-            <div class="Project">
+            <!-- <div class="project" id="project">
                 <div class="title">
                     <h1 class="resume_text">Projects</h1>
                 </div>
@@ -273,7 +276,7 @@
                     
 
                 </div>
-            </div>
+            </div> -->
 
             </div>
         </div>
@@ -287,7 +290,7 @@
             <h1>Please enter your name</h1>
             <div class="input-name-section" id="input-name-section">
                 <input type="text" id="name_insert">
-                <button onclick="submitName()" id="hover-submit-button">Submit</button>
+                <button onclick="submitName()" onmouseenter="toggleColorChange()" onmouseout="toggleColorChange2()" id="hover-submit-button" >Submit</button>
             </div>
             <h3 id="userWarning" class="userWarning">Please input your name</h3>
             
