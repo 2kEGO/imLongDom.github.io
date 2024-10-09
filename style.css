@@ -207,3 +207,7 @@ body {
     text-decoration: none;
     color: white;
 }
+
+.social-container a:hover {
+    background-color: hsl(0, 0%, 70%);
+}
