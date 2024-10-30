@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    
+    <!-- HEADER SECTION -->
     <nav class="navigation-container">
         <div class="navigation-items">
 
@@ -40,9 +40,11 @@
         </div>
     </nav>
 
+    <!-- BODY SECTION AND INPUT FORM -->
     <div class="body_container">
         <div class="body">
 
+            <!-- INTRODUCTION SECTION -->
             <div class="intro" id="intro">
                 <div class="intro_img_container">
                     <img src="cat.jpg" alt="" onclick="toggleZoom()" id="avatar-img">
@@ -78,6 +80,7 @@
 
             </div>  
 
+            <!-- EDUCATION SECTION -->
             <div class="education" id="edu">
                 <div class="title">
                     <h1>Education</h1>                 
@@ -114,7 +117,6 @@
             
             
             <!-- FAVORITE COURSE -->
-
             <div class="course" id="course">
 
                 <div class="title">
@@ -154,6 +156,7 @@
 
             </div>
 
+            <!-- EXPERIENCE SECTION -->
             <div class="experience" id="experience">
                 <div class="title">
                     <h1 class="resume_text">Experience</h1>
@@ -223,45 +226,30 @@
                 </div>
             </div>
 
-            <!-- <div class="project" id="project">
+            <!-- CONTACT SECTION -->
+            <div class="get-contact" id="contact">
                 <div class="title">
-                    <h1 class="resume_text">Projects</h1>
+                    <h1 class="resume_text">Get in touch with me</h1>
                 </div>
+                <form action="" class="get-contact-form" id="form">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="Email" id="email">
+                    <input type="text" placeholder="Phone" id="phone">
+                    <textarea name="" id="message" placeholder="Message"></textarea>
 
-                <div class="project_content">
-
-                    <a href="#" class="project_items">                
-                        <img src="" alt="">                   
-                        <div class="span-slide">
-                            <span>Tic Tac Toe</span>
-                        </div>  
-                    </a>
-
-                    <a href="#" class="project_items">                
-                        <img src="" alt="">
-                        <div class="span-slide">
-                            <span>OP.GG Replication</span>
-                        </div>    
-                    </a>
-
-                    <a href="#" class="project_items">                
-                        <img src="" alt="">
-                        <div class="span-slide">
-                            <span>Random Color</span>
-                        </div>    
-                    </a>
-
-                    <a href="#" class="project_items">                
-                        <img src="" alt="">
-                        <div class="span-slide">
-                            <span>Calculator</span>
-                        </div>
-    
-                    </a>
+                    <label for="prefer-contact">Prefer contact Method:</label>
+                    <select name="" id="prefer-contact">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                    </select>
                     
+                    <label for="">
+                        <button type="submit" id="submitButton">Submit</button>
+                        <button type="reset" id="resetButton">Clear</button>
+                    </label>
 
-                </div>
-            </div> -->
+                </form>
+            </div>
 
             </div>
         </div>
@@ -270,6 +258,7 @@
         </div>
     </div>
 
+    <!-- FRONT PAGE USER NAME INPUT SECTION -->
     <div class="name-insert-section" id="name-insert-section">
         <div class="insert-section">
             <h1>Please enter your name</h1>
@@ -281,6 +270,13 @@
             
         </div>
     </div>
+
+
     <script src="script.js"></script>    
 </body>
+<footer>
+    <p>Copyright ©2024 All rights reserved</p>
+    <p>Privacy Policy | Terms of Service</p>
+    <p>Powered by <a href="https://www.google.com/">Google</a></p>
+</footer>
 </html>
